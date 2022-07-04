@@ -28,30 +28,21 @@
 }
 //Task17 ();
 
-void Task18()
+
+void Task21()
 {
-    Console.WriteLine("Задача 18: Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).");
-    Console.WriteLine("Введите номер четверти: ");
-    int q = Convert.ToInt32 (Console.ReadLine ());
-    if (q == 1)
-    {
-        Console.WriteLine("0 < x < infinity, 0 < y < infinity");
-    }
-    else if (q == 2)
-    {
-        Console.WriteLine("infinity < x < 0, 0 < y < infinity");
-    }
-    else if (q == 3)
-    {
-        Console.WriteLine("infinity < x < 0, infinity < y < 0");
-    }
-    else if (q == 4)
-    {
-        Console.WriteLine("0 < x < infinity, infinity < y < 0");
-    }
-    else 
-    {
-        Console.WriteLine ("Неправильно задана четверть");
-    }
+    Console.WriteLine("Задача 21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.");
+    Console.WriteLine("Введите первую координату по оси Х: ");
+    int x1 = Convert.ToInt32 (Console.ReadLine ());
+    Console.WriteLine("Введите первую координату по оси Y: ");
+    int y1 = Convert.ToInt32 (Console.ReadLine ());
+    Console.WriteLine("Введите вторую координату по оси Х: ");
+    int x2 = Convert.ToInt32 (Console.ReadLine ());
+    Console.WriteLine("Введите вторую координату по оси Y: ");
+    int y2 = Convert.ToInt32 (Console.ReadLine ());
+    double result = Math.Sqrt(Math.Pow(x2-x1,2) + Math.Pow(y2-y1,2));
+    Console.WriteLine(result);
+    
 }
-Task18 ();
+Task21 ();
+
