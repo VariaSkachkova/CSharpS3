@@ -44,5 +44,22 @@ void Task21()
     Console.WriteLine(result);
     
 }
-Task21 ();
+//Task21 ();
+void Task22()
+{
+    Console.WriteLine("Задача 22: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.");
+    Console.WriteLine("Введите целое положительное число: ");
+    int num = Convert.ToInt32 (Console.ReadLine ());
+    double count = 1;
+    while (count <= num)
+    {
+        double result = Math.Pow(count, 2);
+        Console.Write(result + " ");
+        count ++;
+    }
+}
+Task22();
+
+
+
 
